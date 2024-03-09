@@ -1,0 +1,41 @@
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+<body>
+    
+        <p>DELIVERY LIST DETAILS</p>
+        <div class="bg"></div>
+            
+    
+    <table id="table">
+      <thead>
+          <tr>
+           <th>DOCNUM</th> 
+           <th>EntryTime</th>
+           <th>RecordEntry</th>
+           <th>PurchaceDoc</th>
+           <th>DeliveryType</th>
+           <th>Incoterm2</th>
+           <th>SalesOrderitem</th>
+           <th>TimeOfDelivery</th>
+           </tr>
+           </thead>
+    <tr *ngFor="let role of resdata">
+      <td><span>{{role.Vbeln}}</span></td> 
+      <td><span>{{role.Erzet}}</span></td>
+      <td><span>{{role.Erdat}}</span></td>
+      <td><span>{{role.Vkorg}}</span></td>
+      <td><span>{{role.Lfart}}</span></td>
+      <td><span>{{role.Inco2}}</span></td>
+      <td><span>{{role.Arktx}}</span></td>
+      <td><span>{{role.Lfart}}</span></td>
+    </tr>
+    </table>
+</body>
+</html>
+
+    
